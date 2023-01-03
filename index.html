@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Card Game - War</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section id="instructions">
+			<h1>War Card Game</h1>
+			<p>Instructions for War:
+				<ul>
+					<li>Both Players draw a card</li>
+					<li>Players compare cards</li>
+					<li>Player with higher card wins</li>
+					<li>If players have same card:
+						<ul>
+						<li>Declare war: each player puts one card face down and another face up</li>
+						<li>Player with higher card wins all 6 (3 from each player)</li>
+						<li>If the result of war is another tie, then process repeats and winner gets all 10 cards (5 from each player)</li>
+					</li></ul>
+					<li>Winner of each hand takes all cards played on that hand</li>
+					<li>The game is over when one player has all cards from deck</li>
+				</ul>
+			</p>
+		
+		</section>
+		<section id="menu">
+			<button id="cont" style="display:none">Continue Previous Game</button>
+			<button id="new">New Game</button>
+		</section>
+		<main style="display:none">
+			<section ><button id="dealBtn">Deal Hand</button></section>	
+			<section id="cardsRemain">
+				<h3>Cards Remaining in Deck: <em id="remain"></em></h3>
+			</section>	
+			<section id="hand">
+				<div>
+					<h2>Player 1</h2>
+					<img src="" alt="card" id="player1">
+					<span>Cards: <em class="points1"></em></span>
+				</div>
+				<div>
+					<h2>Player 2</h2>
+					<img src="" alt="card" id="player2">
+					<span>Cards: <em class="points2"></em></span>
+				</div>
+			</section>
+
+		</main>
+		
+		
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
